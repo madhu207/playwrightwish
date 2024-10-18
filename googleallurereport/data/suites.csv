@@ -1,0 +1,4 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","4442","Allure report3","chromium","Thu Oct 17 14:11:21 IST 2024","passed","Thu Oct 17 14:11:26 IST 2024","","AllureReport.spec.ts","",""
+"","3904","Allure report1","chromium","Thu Oct 17 14:10:57 IST 2024","passed","Thu Oct 17 14:11:01 IST 2024","","AllureReport.spec.ts","",""
+"","8739","Allure report2","chromium","Thu Oct 17 14:11:11 IST 2024","failed","Thu Oct 17 14:11:20 IST 2024","","AllureReport.spec.ts","",""

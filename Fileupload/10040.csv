@@ -1,0 +1,175 @@
+Issue Id,Issue key,Issue type,Summary,,Precondition type,Priority,Component,Action,Data,Result,Unstructured defination,Gherkin defination,"Link ""Tests""",Test Level,Test Repository Path,Test Environments,Test set,Preconditions,Assignee
+1,,,"Test-NBEC-10040-Desktop-verify When a user who has added an item to their basket on the Ecommerce website navigates to the marketing website using any of the links on eComm, then a cookie is passed to the marketing site which contains the number of items in the basket",Manual,,High,,"Open any applicable browser (eg. Chrome) on Desktop and launch the Canon  Store portal using below TST url:
+https://canon-b2c-store-tst.mobify-storefront.com/s",,"The Canon Store portal should get open on chrome browser (Desktop) and Design should appear as per Design guidelines for Desktop 
+
+Reference link  - SFCC PDP Cameras + Lens Page Templates (adobe.com) ",,,NBEC-10040,02 STT - System Test,Cycle 1 - ST - Test Cases,TST,NBEC-10674,,keerthi.k-y@canon-europe.com
+1,,,,,,,,Verify if a cookie is passed to the marketing site which contains the number of items in the basket when user adds an item in basket using ecomm website ,,"user shpuld navigates to the marketing website using any of the links on eComm, then a cookie should be  passed to the marketing site which contains thenumber of items in the basket ",,,,,,,,,
+2,,,"Test-NBEC-10040-Desktop-check if The cookie information is passed to the URL of the marketing site the user lands on (e.g. if user is on Canon , the cookie information gets passed to Digital Cameras, Lenses, Camcorders & Printers . If on Canon , then pass cookie info to Digital Cameras, Lenses, Camcorders & Printers  etc...)",Manual,,High,,"Open any applicable browser (eg. Chrome) on Desktop and launch the Canon  Store portal using below TST url:
+https://canon-b2c-store-tst.mobify-storefront.com/s",,"The Canon Store portal should get open on chrome browser (Desktop) and Design should appear as per Design guidelines for Desktop 
+
+Reference link  - SFCC PDP Cameras + Lens Page Templates (adobe.com) ",,,NBEC-10040,02 STT - System Test,Cycle 1 - ST - Test Cases,TST,NBEC-10674,,keerthi.k-y@canon-europe.com
+2,,,,,,,,Verify if cookie information is passed to the url of marketing site where user lands ,,"The cookie information is passed to the URL of the marketing site the user lands on (e.g. if user is on Canon , the cookie information gets passed to Digital Cameras, Lenses, Camcorders & Printers . If on Canon , then pass cookie info to Digital Cameras, Lenses, Camcorders & Printers  etc...)",,,,,,,,,
+3,,,Test-NBEC-10040-Desktop-Verify if no security vulnerabilities are being introduced. Please review: Set-Cookie - HTTP | MDN  . We need to add the HTTPS and the Secure parameter,Manual,,High,,"Open any applicable browser (eg. Chrome) on Desktop and launch the Canon  Store portal using below TST url:
+https://canon-b2c-store-tst.mobify-storefront.com/s",,"The Canon Store portal should get open on chrome browser (Desktop) and Design should appear as per Design guidelines for Desktop 
+
+Reference link  - SFCC PDP Cameras + Lens Page Templates (adobe.com) ",,,NBEC-10040,02 STT - System Test,Cycle 1 - ST - Test Cases,TST,NBEC-10674,,keerthi.k-y@canon-europe.com
+3,,,,,,,,check if any security vulnerabilities are introduced,,no security vulnerabilities are being introduced.,,,,,,,,,
+4,,,Test-NBEC-10040-Desktop-Verify if Cookie Key name will be: ecomm_basket_count; value will be - 1~o6530013DEV,Manual,,High,,"Open any applicable browser (eg. Chrome) on Desktop and launch the Canon  Store portal using below TST url:
+https://canon-b2c-store-tst.mobify-storefront.com/s",,"The Canon Store portal should get open on chrome browser (Desktop) and Design should appear as per Design guidelines for Desktop 
+
+Reference link  - SFCC PDP Cameras + Lens Page Templates (adobe.com) ",,,NBEC-10040,02 STT - System Test,Cycle 1 - ST - Test Cases,TST,NBEC-10674,,keerthi.k-y@canon-europe.com
+4,,,,,,,,check the Cookie Key name ,,it should be be: ecomm_basket_count; value will be - 1~o6530013DEV,,,,,,,,,
+5,,,Test-NBEC-10040-Desktop-The Cookie will expire on the marketing in the same time frame as the corresponding cookie for the profile on the eCommerce site:,Manual,,High,,"Open any applicable browser (eg. Chrome) on Desktop and launch the Canon  Store portal using below TST url:
+https://canon-b2c-store-tst.mobify-storefront.com/s",,"The Canon Store portal should get open on chrome browser (Desktop) and Design should appear as per Design guidelines for Desktop 
+
+Reference link  - SFCC PDP Cameras + Lens Page Templates (adobe.com) ",,,NBEC-10040,02 STT - System Test,Cycle 1 - ST - Test Cases,TST,NBEC-10674,,keerthi.k-y@canon-europe.com
+5,,,,,,,,verify if The Cookie will expire on the marketing in the same time frame as the corresponding cookie for the profile on the eCommerce site:,,"The Cookie will expire on the marketing in the same time frame as the corresponding cookie for the profile on the eCommerce site:
+
+Guest Profile: the cookie information is stored for a duration of 30 days. After this, the cookie expires
+
+Logged in users: the cookie information is stored for a duration of 30 days. After this, the cookie expires
+
+Cookie expiry date is counted from the last update to the basket date",,,,,,,,,
+6,,,Test-NBEC-10040-Desktop- The Cookie contents will be updated as the user adds or removes items from the basket,Manual,,High,,"Open any applicable browser (eg. Chrome) on Desktop and launch the Canon  Store portal using below TST url:
+https://canon-b2c-store-tst.mobify-storefront.com/s",,"The Canon Store portal should get open on chrome browser (Desktop) and Design should appear as per Design guidelines for Desktop 
+
+Reference link  - SFCC PDP Cameras + Lens Page Templates (adobe.com) ",,,NBEC-10040,02 STT - System Test,Cycle 1 - ST - Test Cases,TST,NBEC-10674,,keerthi.k-y@canon-europe.com
+6,,,,,,,,check how the cookie contents are updated ,,Cookie contents will be updated as the user adds or removes items from the basket,,,,,,,,,
+7,,,"Test-NBEC-10040-Desktop-  When the user checks out, the cookie information should get cleared (as the items of the basket gets cleared)",Manual,,High,,"Open any applicable browser (eg. Chrome) on Desktop and launch the Canon  Store portal using below TST url:
+https://canon-b2c-store-tst.mobify-storefront.com/s",,"The Canon Store portal should get open on chrome browser (Desktop) and Design should appear as per Design guidelines for Desktop 
+
+Reference link  - SFCC PDP Cameras + Lens Page Templates (adobe.com) ",,,NBEC-10040,02 STT - System Test,Cycle 1 - ST - Test Cases,TST,NBEC-10674,,keerthi.k-y@canon-europe.com
+7,,,,,,,,verify if the cookie information is cleared when user checks out,,cookie info should be cleared ,,,,,,,,,
+8,,,"Test-NBEC-10040-Desktop- The cookie will be created when the user adds to the basket, user logs in (if a registered user) & there is an item added to basket",Manual,,High,,"Open any applicable browser (eg. Chrome) on Desktop and launch the Canon  Store portal using below TST url:
+https://canon-b2c-store-tst.mobify-storefront.com/s",,"The Canon Store portal should get open on chrome browser (Desktop) and Design should appear as per Design guidelines for Desktop 
+
+Reference link  - SFCC PDP Cameras + Lens Page Templates (adobe.com) ",,,NBEC-10040,02 STT - System Test,Cycle 1 - ST - Test Cases,TST,NBEC-10674,,keerthi.k-y@canon-europe.com
+8,,,,,,,,verify if the cookie information is created  when user checks in,,cookie info should be created user logs in (if a registered user) & there is an item added to basket,,,,,,,,,
+9,,,Test-NBEC-10040-Desktop-  The cookie will get updated when the user adds or remove items to/from the basket (applies to both guest/anonymous & registered user),Manual,,High,,"Open any applicable browser (eg. Chrome) on Desktop and launch the Canon  Store portal using below TST url:
+https://canon-b2c-store-tst.mobify-storefront.com/s",,"The Canon Store portal should get open on chrome browser (Desktop) and Design should appear as per Design guidelines for Desktop 
+
+Reference link  - SFCC PDP Cameras + Lens Page Templates (adobe.com) ",,,NBEC-10040,02 STT - System Test,Cycle 1 - ST - Test Cases,TST,NBEC-10674,,keerthi.k-y@canon-europe.com
+9,,,,,,,,verify if the cookie information is updated   when user adds  or remove items to/from the basket,,cookie info should be updated  when user adds  or remove items to/from the basket,,,,,,,,,
+10,,,Test-NBEC-10040-Desktop- The cookie will get deleted when the user completes the order and reaches the order confirmation page,Manual,,High,,"Open any applicable browser (eg. Chrome) on Desktop and launch the Canon  Store portal using below TST url:
+https://canon-b2c-store-tst.mobify-storefront.com/s",,"The Canon Store portal should get open on chrome browser (Desktop) and Design should appear as per Design guidelines for Desktop 
+
+Reference link  - SFCC PDP Cameras + Lens Page Templates (adobe.com) ",,,NBEC-10040,02 STT - System Test,Cycle 1 - ST - Test Cases,TST,NBEC-10674,,keerthi.k-y@canon-europe.com
+10,,,,,,,,verify if the cookie information is deleted when user completes the order and reaches the order confirmation page,,cookie info should be deleted ,,,,,,,,,
+11,,,Test-NBEC-10040-Desktop-  The cookie should work as expected by all supported browsers (Check Safari and Chrome in particular for SameSite Attribute),Manual,,High,,"Open any applicable browser (eg. Chrome) on Desktop and launch the Canon  Store portal using below TST url:
+https://canon-b2c-store-tst.mobify-storefront.com/s",,"The Canon Store portal should get open on chrome browser (Desktop) and Design should appear as per Design guidelines for Desktop 
+
+Reference link  - SFCC PDP Cameras + Lens Page Templates (adobe.com) ",,,NBEC-10040,02 STT - System Test,Cycle 1 - ST - Test Cases,TST,NBEC-10674,,keerthi.k-y@canon-europe.com
+11,,,,,,,,verify if cookie works on all browsers,,should support on all browsers( Safari and Chrome in particular for SameSite Attribute),,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,

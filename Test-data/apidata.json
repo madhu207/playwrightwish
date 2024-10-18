@@ -1,0 +1,29 @@
+
+
+{
+    "Postcalldata" :{
+        "firstname": "Eric",
+        "lastname": "Ericsson",
+        "totalprice": 114,
+        "depositpaid": false,
+        "bookingdates": {
+            "checkin": "2018-02-21",
+            "checkout": "2019-07-01"
+        },
+        "additionalneeds": "Breakfast"
+    },
+
+    "Putcalldata" :{
+       "firstname": "wish",
+    "lastname": "update",
+    "totalprice": 111,
+    "depositpaid": true,
+    "bookingdates": {
+        "checkin": "2018-01-01",
+        "checkout": "2019-01-01"
+    },
+    "additionalneeds": "Breakfast"
+    }
+  
+
+}
